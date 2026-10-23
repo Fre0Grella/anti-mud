@@ -1,0 +1,17 @@
+{
+  "name": "anti-mud",
+  "owner": {
+    "name": "Marco Galeri",
+    "url": "https://github.com/Fre0Grella"
+  },
+  "description": "The anti-mud skill, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "anti-mud",
+      "source": "./",
+      "description": "Learns a project's intended architecture, enforces it with CI checks, and cleans up drift or mud in waves.",
+      "category": "engineering",
+      "keywords": ["architecture", "tech-debt", "code-quality"]
+    }
+  ]
+}

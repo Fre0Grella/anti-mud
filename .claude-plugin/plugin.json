@@ -1,0 +1,13 @@
+{
+  "name": "anti-mud",
+  "version": "1.0.0",
+  "description": "Keeps a codebase in any language from turning into a ball of mud: learns the intended architecture, writes it down, turns its rules into CI checks, and judges the code (new, healthy, drifting, muddy) with a plan for each.",
+  "author": {
+    "name": "Marco Galeri",
+    "url": "https://github.com/Fre0Grella"
+  },
+  "repository": "https://github.com/Fre0Grella/anti-mud",
+  "license": "MIT",
+  "keywords": ["architecture", "tech-debt", "code-quality", "ci", "ratchet", "refactoring"],
+  "skills": ["./skills/anti-mud"]
+}
