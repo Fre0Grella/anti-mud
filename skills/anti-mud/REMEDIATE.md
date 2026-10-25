@@ -7,8 +7,11 @@ each one merged and green before the next depends on it.
 
 From the assessment, list each problem, package by package, with its
 size and places: "logo drawn 7 ways", "3 request wrappers", "domain rules
-in 12 views", "store doing 10 jobs". Group them into workstreams that
-touch disjoint files; every package with findings gets one.
+in 12 views", "store doing 10 jobs". Every concept-table row with two
+or more copies and every module with rules tangled with I/O is a
+problem on this list; each lands in a workstream or is set aside with a
+reason. Group them into workstreams that touch disjoint files; every
+package with findings gets one.
 
 ## 2. Write the plan
 
