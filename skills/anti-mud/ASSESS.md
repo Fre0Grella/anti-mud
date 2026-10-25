@@ -38,8 +38,13 @@ implementations:
 - input parsing and body reading, codecs, serialisers, and the code
   that reads back what another part wrote (tokens, links, payloads);
 - validation, defaults or sanitising of the same data, on each side
-  of a boundary (client, server, storage read);
-- lookups (find X by id, slug, token) repeated per handler;
+  of a boundary (client, server, storage read). Two sides shaping the
+  same data differently is a finding even when it looks deliberate:
+  propose one definition both sides use, or make it an owner question;
+  don't dismiss it as "by design";
+- lookups (find X by id, slug, token) repeated per handler: count the
+  repeated sequence (find, check, answer "not found" or "forbidden"),
+  not only the calls to the lookup function;
 - the same asset drawn more than once: open the drawings themselves
   (inline SVG, canvas, CSS-built shapes), don't stop at file references;
 - bootstrap code repeated per page or entry point (theme, config, auth);
