@@ -5,9 +5,10 @@ each one merged and green before the next depends on it.
 
 ## 1. Map the mud
 
-From the assessment, list each problem with its size and places: "logo
-drawn 7 ways", "3 request wrappers", "domain rules in 12 views", "store
-doing 10 jobs". Group them into workstreams that touch disjoint files.
+From the assessment, list each problem, package by package, with its
+size and places: "logo drawn 7 ways", "3 request wrappers", "domain rules
+in 12 views", "store doing 10 jobs". Group them into workstreams that
+touch disjoint files; every package with findings gets one.
 
 ## 2. Write the plan
 

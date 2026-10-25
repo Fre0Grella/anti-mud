@@ -12,9 +12,10 @@ down, and turns each architectural rule into a check that fails in CI.
 1. **Understand.** Explores the stack, the ecosystem's conventions, the
    structure and the written intent; asks what the code can't answer;
    writes `docs/agents/architecture.md` with a rule → check table.
-2. **Assess.** Measures the same signals every run (duplication,
-   warnings, boundary breaches, cycles, dead code, type coverage, test
-   purpose, guards) and gives a verdict with evidence: **new**,
+2. **Assess.** Measures the same signals every run, package by package
+   (duplication, one concept with many implementations, styling outside
+   the design system, warnings, boundary breaches, cycles, dead code,
+   type coverage, test purpose, guards) and gives a verdict with evidence: **new**,
    **healthy**, **drifting** or **muddy**.
 3. **Act on the verdict.**
    - *New:* helps choose an architecture from the ecosystem's

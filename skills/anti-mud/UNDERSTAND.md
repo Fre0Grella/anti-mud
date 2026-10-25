@@ -11,6 +11,7 @@ judged against it.
   (standard layout, module system, idioms). These are the defaults.
 - **Structure:** top-level folders, how modules group (by layer, by
   feature, by package), the import/dependency graph between groups.
+  Walk every package, not only the biggest one.
 - **Intent in writing:** README, docs, domain glossary (CONTEXT.md or
   similar), existing decision records, the instructions file, comments
   that state rules.
@@ -23,6 +24,8 @@ judged against it.
   - shallow modules: interface nearly as complex as the implementation;
   - pure functions pulled out only for tests, the bugs left in the callers;
   - tightly coupled modules leaking across their seams;
+  - a module mixing pure rules with I/O (network, storage, DOM, canvas,
+    clock): its rules can't be tested or reused without the side effects;
   - areas untested, or hard to test through their interface.
   Mark suspects for the deletion test: delete it in your head; does the
   complexity vanish (pass-through) or spread to every caller (earning it)?
